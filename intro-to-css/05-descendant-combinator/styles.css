@@ -1,0 +1,8 @@
+/* This will only inherit styling if element belongs to parent class .container, then .text is part of container, and p gets targeted. This method is simpiler because the p element has the text class directly.  */
+
+.container .text {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}

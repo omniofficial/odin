@@ -1,4 +1,5 @@
 .avatar.proportioned {
+    /* This will have all proporties from .avatar, .proportioned, and any individual defined here (.avatar and .proportioned) */
     width: 300px;
     height: auto;
 }
