@@ -3,28 +3,64 @@ body {
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     margin: 0;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .header {
-    height: 72px;
+    display: flex;
+    font-weight: 900;
+    font-size: 32px;
+    padding: 16px;
     background: darkmagenta;
     color: white;
 }
 
-.footer {
-    height: 72px;
-    background: #eee;
-    color: darkmagenta;
+.sub_container {
+    display: flex;
 }
 
 .sidebar {
+    padding: 16px;
     width: 300px;
+    flex-shrink: 0;
     background: royalblue;
     box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 16px;
 }
 
 .card {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
+    padding: 16px;
+    width: 300px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    background: #eee;
+    color: darkmagenta;
 }
