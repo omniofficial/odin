@@ -33,7 +33,9 @@ body {
 }
 
 a {
+    color: #666;
     text-decoration: none;
+    font-size: 12px;
 }
 
 ul {
@@ -48,11 +50,17 @@ img {
     width: 600px;
 }
 
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
 button {
     font-family: Roboto, sans-serif;
     border: none;
     border-radius: 8px;
     background: #eee;
+    padding: 10px;
 }
 
 input {
