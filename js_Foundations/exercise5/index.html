@@ -24,7 +24,28 @@
             let name = "AAdrian";
             let day = "Thursday";
             console.log(name);
-            greetingMessage(name, day);
+
+            function sum(a, b) {
+                let result = a + b;
+                return result;
+            }
+            outcome = sum(1, 2);
+            console.log(outcome);
+
+            function findMinimum(x, y) {
+                let minimum = 0;
+                if (x < y) {
+                    minimum = x;
+                } else {
+                    minimum = y;
+                }
+                console.log(
+                    "The minimum between " + x + " and " + y + " is: " + minimum
+                );
+            }
+            findMinimum(2, 5);
+            findMinimum(3, -1);
+            findMinimum(1, 1);
         </script>
     </body>
 </html>
