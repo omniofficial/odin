@@ -34,3 +34,4 @@ function lastLetter(input) {
 let str2 = "Thanos";
 outcome = lastLetter(str2);
 console.log(outcome);
+
