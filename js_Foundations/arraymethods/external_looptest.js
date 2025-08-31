@@ -1,7 +1,5 @@
-function filterDogs(dog) {
-    return dog.startsWith("D");
-}
+const dogs = ["Doggo1", "Doggo2", "Doggo3", "Doggo4", "Doggo5"];
 
-const dogs = ["Jeff", "Susan", "Mary", "Doggo", "fatDoggo", "NotaDog"];
-const filtered = dogs.filter(filterDogs);
-console.log(filtered);
+for (let i = 0; i < dogs.length; i++) {
+    console.log(dogs[i]);
+}
