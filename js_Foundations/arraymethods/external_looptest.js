@@ -1,10 +1,7 @@
-function lCat(cat) {
-    return cat.startsWith("L");
+function filterDogs(dog) {
+    return dog.startsWith("D");
 }
 
-const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
-
-const filtered = cats.filter(lCat);
-
+const dogs = ["Jeff", "Susan", "Mary", "Doggo", "fatDoggo", "NotaDog"];
+const filtered = dogs.filter(filterDogs);
 console.log(filtered);
-// [ "Leopard", "Lion" ]
