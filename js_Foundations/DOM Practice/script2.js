@@ -12,6 +12,14 @@ blueHeader.textContent = "I'm a blue h3!";
 container.appendChild(blueHeader);
 
 const contentDiv = document.createElement("div");
-contentDiv.classList.add("")
+contentDiv.classList.add("content");
+
 const divHeader = document.createElement("h1");
-divHeader.textContent = ""
+divHeader.textContent = "I'm in a div";
+
+const divParagraph = document.createElement("p");
+divParagraph.textContent = "ME TOO!";
+
+contentDiv.appendChild(divHeader);
+contentDiv.appendChild(divParagraph);
+container.appendChild(contentDiv);
