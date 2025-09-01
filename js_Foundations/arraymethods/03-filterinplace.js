@@ -3,10 +3,10 @@
 
 function filterRangeInPlace(arr, a, b) {
     for (let i = 0; i < arr.length; i++) {
-        let val = arr[i];
-        if (val < a || val > b) {
+        let value = arr[i];
+        // Remove when outside of interval
+        if (value < a || value > b) {
             arr.splice(i, 1);
-            i--;
         }
     }
 }
