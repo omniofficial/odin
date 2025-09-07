@@ -17,3 +17,8 @@ const text = document.createTextNode(
 const linkPara = document.querySelector("a");
 linkPara.appendChild(text);
 
+para.style.color = "white";
+para.style.backgroundColor = "black";
+para.style.padding = "10px";
+para.style.width = "250px";
+para.style.textAlign = "center";
