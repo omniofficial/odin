@@ -27,7 +27,8 @@ function Person(name) {
     };
 }
 
-const salva = new Person("Salva");
+const salva = new Person("Salva"); // “new Person("Salva") creates a brand new object, makes 'this' point to it inside the constructor, assigns the properties (name, introduceSelf) onto it, and then returns that object. The variable salva ends up holding a reference to that new object.”
+
 salva.introduceSelf();
 // "Hi! I'm Salva."
 
