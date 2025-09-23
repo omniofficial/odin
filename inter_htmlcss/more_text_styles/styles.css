@@ -1,0 +1,15 @@
+h1 {
+  font-family: 'COUTUREBold';
+  margin: 0;
+  font-size: 38px;
+}
+
+.wide {
+  font-size: 24px;
+  letter-spacing: 0.5em;
+}
+
+.narrow {
+  font-size: 48px;
+  letter-spacing: -0.15em;
+}
