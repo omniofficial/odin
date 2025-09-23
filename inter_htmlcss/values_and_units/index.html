@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <ul class="ems">
+            <li>One</li>
+            <li>Two</li>
+            <li>
+                Three
+                <ul>
+                    <li>Three A</li>
+                    <li>
+                        Three B
+                        <ul>
+                            <li>Three B 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="rems">
+            <li>One</li>
+            <li>Two</li>
+            <li>
+                Three
+                <ul>
+                    <li>Three A</li>
+                    <li>
+                        Three B
+                        <ul>
+                            <li>Three B 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="box px">I am 200px wide</div>
+        <!-- 40% wide of whole body content width. If window is 1000px, then box percent is 400px. -->
+        <div class="box percent">I am 40% wide</div>
+        <div class="wrapper">
+            <!-- Still 200px wide -->
+            <div class="box px">I am 200px wide</div>
+            <!-- 40% wide of parent width, where parent is wrapper. 0.40 x 400px. -->
+            <div class="box percent">I am 40% wide</div>
+        </div>
+    </body>
+</html>
