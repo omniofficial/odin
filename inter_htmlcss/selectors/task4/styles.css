@@ -1,0 +1,14 @@
+body {
+    font: 1.2em / 1.5 sans-serif;
+}
+
+/* tilda means any paragraph after h2, + is direct paragraph after h2. If there is something between the h2 and p, then + won't work. */
+
+h2 ~ p {
+    color: red;
+}
+
+.list > li {
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
