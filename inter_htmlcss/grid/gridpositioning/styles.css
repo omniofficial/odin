@@ -1,18 +1,19 @@
 .container {
-    display: inline-grid;
-    grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
-    background-color: lightblue;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
 }
 
-.room {
-    border: 1px solid;
-    font-size: 50%;
+.item {
+    background-color: orange;
+    border: 1px solid black;
     text-align: center;
 }
 
-#living-room {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    /*   grid-row-start: 1;
-  grid-row-end: 3; */
+.first-row {
+    background-color: pink;
+}
+
+.last-columm {
+    background-color: lightblue;
 }
