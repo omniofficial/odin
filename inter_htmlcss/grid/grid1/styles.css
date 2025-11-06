@@ -1,9 +1,5 @@
 .container {
     display: grid;
-    grid-template-columns: 50px 50px;
+    grid-template-columns: 60px 50px;
     grid-template-rows: 50px 50px;
-}
-
-.container > div {
-    border: 1px solid blue;
 }
