@@ -6,11 +6,8 @@
     padding: 4px;
     border: 1px solid grey;
     background-color: skyblue;
-    grid-template-rows: 150px 150px; /* OR 
-    grid-template-rows: repeat(2, 150px);*/
-
-    grid-template-columns: 150px 150px 150px 150px 150px; /* OR 
-    grid-template-columns: repeat(5, 150px);*/
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .grid-item {
