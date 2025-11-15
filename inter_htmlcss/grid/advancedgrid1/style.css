@@ -1,5 +1,4 @@
 .grid-container {
-    height: 100vh;
     resize: both;
     overflow: auto;
     display: grid;
@@ -8,7 +7,7 @@
     border: 1px solid grey;
     background-color: skyblue;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 125px) repeat(3, 1fr);
+    grid-template-columns: repeat(5, clamp(150px, 20%, 200px));
 }
 
 .grid-item {
