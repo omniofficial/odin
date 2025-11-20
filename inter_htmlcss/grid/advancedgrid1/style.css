@@ -8,6 +8,7 @@
     background-color: skyblue;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(5, clamp(150px, 20%, 200px));
+    /* Each item will be never smaller than 150px, never larger than 200px, but ideally between 20% of the container width. */
 }
 
 .grid-item {
