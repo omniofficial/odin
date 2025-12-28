@@ -20,14 +20,17 @@ function Healer(name, level, spell) {
 Object.setPrototypeOf(Warrior.prototype, Hero.prototype);
 Object.setPrototypeOf(Healer.prototype, Hero.prototype);
 
+// Method shared by all hero instances (all can use this)
 Hero.prototype.greet = function () {
     return `${this.name} says hello.`;
 };
 
+// Method shared by all warrior instances (only warriors can attack)
 Warrior.prototype.attack = function () {
     return `${this.name} attacks with the ${this.weapon}.`;
 };
 
+// Method shared by all healer instances (only healers can heal)
 Healer.prototype.heal = function () {
     return `${this.name} casts ${this.spell}.`;
 };
