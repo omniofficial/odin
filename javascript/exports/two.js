@@ -2,3 +2,7 @@ import { greeting, farewell } from "./one.js";
 
 console.log(greeting); // "Hello, Odinite!"
 console.log(farewell); // "Bye bye, Odinite!"
+
+// OR
+import helloOdinite from "./one.js";
+console.log(helloOdinite);
