@@ -51,4 +51,13 @@ function showEmailError(email, emailInput) {
     }
 }
 
+function validateCountry() {}
+function showCountryError() {}
+
+function validatePostalCode() {}
+function showPostalCodeError() {}
+
+function validatePassword() {}
+function showPasswordError() {}
+
 export { validateEmail };
