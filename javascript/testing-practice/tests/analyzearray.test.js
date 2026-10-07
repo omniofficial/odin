@@ -5,4 +5,7 @@ test("Determines if analyzeArray returns an object with desired properties", () 
     const arrayObject = analyzeArray(numbersArray);
 
     expect(arrayObject).toHaveProperty("average", 4);
+    expect(arrayObject).toHaveProperty("min", 1);
+    expect(arrayObject).toHaveProperty("max", 8);
+    expect(arrayObject).toHaveProperty("length", 6);
 });
