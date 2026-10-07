@@ -37,40 +37,28 @@ function caesarCipher(string, shiftFactor) {
     let cipherString = "";
 
     for (let i = 0; i < string.length; i++) {
-        // Get current character
         let currentChar = string[i];
+        let isUpper = isUpperCase(currentChar);
 
-        if (isUpperCase(currentChar)) {
-            // Convert character to lowercase
-            currentChar = currentChar.toLowerCase();
+        // Convert character to lowercase
+        currentChar = currentChar.toLowerCase();
 
-            // Find index of the current char in alphabet
-            let index = alphabet.indexOf(currentChar);
+        // Find index of the current char in alphabet
+        let index = alphabet.indexOf(currentChar);
 
-            // Shift the index and use modulo 26 to wrap around the alphabet if needed.
-            let shiftedIndex = (index + shiftFactor) % 26;
+        // Shift the index and use modulo 26 to wrap around the alphabet if needed.
+        let shiftedIndex = (index + shiftFactor) % 26;
 
-            // Find alphabet character given index
-            let shiftedChar = alphabet[shiftedIndex];
+        // Find alphabet character given index
+        let shiftedChar = alphabet[shiftedIndex];
 
-            // Convert shifter character to uppercase
+        // Convert shifted character to uppercase if original was uppercase
+        if (isUpper) {
             shiftedChar = shiftedChar.toUpperCase();
-
-            // Append shiftedChar to cipherString
-            cipherString += shiftedChar;
-        } else {
-            // Find index of the current char in alphabet
-            let index = alphabet.indexOf(currentChar);
-
-            // Shift the index and use modulo 26 to wrap around the alphabet if needed.
-            let shiftedIndex = (index + shiftFactor) % 26;
-
-            // Find alphabet character given index
-            let shiftedChar = alphabet[shiftedIndex];
-
-            // Append shiftedChar to cipherString
-            cipherString += shiftedChar;
         }
+
+        // Append shiftedChar to cipherString
+        cipherString += shiftedChar;
     }
 
     return cipherString;
