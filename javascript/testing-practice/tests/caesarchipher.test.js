@@ -14,3 +14,7 @@ test("Test Wrapping", () => {
 test("Case Sensitivity Protection", () => {
     expect(caesarCipher("HeLLo", 3)).toBe("KhOOr");
 });
+
+test("Punctuation", () => {
+    expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+});

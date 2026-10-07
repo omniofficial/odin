@@ -32,6 +32,10 @@ function isUpperCase(char) {
     return char === char.toUpperCase() && char !== char.toLowerCase(); // True or False
 }
 
+function isPunctuation(char) {
+    return !/[a-z]/i.test(char); // True or False
+}
+
 function caesarCipher(string, shiftFactor) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
     let cipherString = "";
@@ -40,25 +44,28 @@ function caesarCipher(string, shiftFactor) {
         let currentChar = string[i];
         let isUpper = isUpperCase(currentChar);
 
-        // Convert character to lowercase
-        currentChar = currentChar.toLowerCase();
+        if (isPunctuation(currentChar)) {
+            cipherString += currentChar;
+        } else {
+            // Convert character to lowercase
+            currentChar = currentChar.toLowerCase();
 
-        // Find index of the current char in alphabet
-        let index = alphabet.indexOf(currentChar);
+            // Find index of the current char in alphabet
+            let index = alphabet.indexOf(currentChar);
 
-        // Shift the index and use modulo 26 to wrap around the alphabet if needed.
-        let shiftedIndex = (index + shiftFactor) % 26;
+            // Shift the index and use modulo 26 to wrap around the alphabet if needed.
+            let shiftedIndex = (index + shiftFactor) % 26;
 
-        // Find alphabet character given index
-        let shiftedChar = alphabet[shiftedIndex];
+            // Find alphabet character given index
+            let shiftedChar = alphabet[shiftedIndex];
 
-        // Convert shifted character to uppercase if original was uppercase
-        if (isUpper) {
-            shiftedChar = shiftedChar.toUpperCase();
+            // Convert shifted character to uppercase if original was uppercase
+            if (isUpper) {
+                shiftedChar = shiftedChar.toUpperCase();
+            }
+            // Append shiftedChar to cipherString
+            cipherString += shiftedChar;
         }
-
-        // Append shiftedChar to cipherString
-        cipherString += shiftedChar;
     }
 
     return cipherString;
