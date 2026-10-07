@@ -71,4 +71,38 @@ function caesarCipher(string, shiftFactor) {
     return cipherString;
 }
 
-export { capitalize, reverseString, calculator, caesarCipher };
+function getAverage(numbers) {
+    let total = 0;
+
+    for (const num of numbers) {
+        total += num;
+    }
+
+    let average = total / numbers.length;
+    return average;
+}
+
+function getMininum(numbers) {
+    return min;
+}
+
+function getMaximum(numbers) {
+    return max;
+}
+
+function getLength(numbers) {
+    return numbers.length;
+}
+
+function analyzeArray(numbers) {
+    const array = {
+        average: getAverage(numbers),
+        min: getMininum(numbers),
+        max: getMaximum(numbers),
+        length: getLength(numbers),
+    };
+
+    return array;
+}
+
+export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
