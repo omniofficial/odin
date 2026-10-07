@@ -3,7 +3,6 @@ function capitalize(string) {
 }
 
 function reverseString(string) {
-    console.log("String reversed");
     let reversedString = "";
 
     for (let i = string.length - 1; i >= 0; i--) {
@@ -14,4 +13,19 @@ function reverseString(string) {
     return reversedString;
 }
 
-export { capitalize, reverseString };
+const calculator = {
+    add(a, b) {
+        return a + b;
+    },
+    subtract(a, b) {
+        return a - b;
+    },
+    multiply(a, b) {
+        return a * b;
+    },
+    divide(a, b) {
+        return a / b;
+    },
+};
+
+export { capitalize, reverseString, calculator };
