@@ -1,5 +1,23 @@
+function checkIsInteger(n) {
+    if (n % 1 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function checkIsNonNegative(n) {
+    if (n >= 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 const factorial = function (n) {
-    if (n % 1 === 0 && n >= 0) {
+    const isInteger = checkIsInteger(n);
+    const isNonNegative = checkIsNonNegative(n);
+    if (isNonNegative && isInteger) {
         // If n = 0, then factorial 0 should evaluate to 1. So return 1.
         if (n === 0) {
             return 1;
