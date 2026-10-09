@@ -14,10 +14,21 @@ function checkIsNonNegative(n) {
     }
 }
 
+function checkIsString(n) {
+    return typeof n === "string";
+}
+
+function checkIsArray(n) {
+    return Array.isArray(n);
+}
+
 const factorial = function (n) {
     const isInteger = checkIsInteger(n);
     const isNonNegative = checkIsNonNegative(n);
-    if (isNonNegative && isInteger) {
+    const isString = checkIsString(n);
+    const isArray = checkIsArray(n);
+
+    if (isNonNegative && isInteger && isString == false && isArray == false) {
         // If n = 0, then factorial 0 should evaluate to 1. So return 1.
         if (n === 0) {
             return 1;
