@@ -2,7 +2,7 @@
 
 const contains = function (object, value) {
     // Base case: found the target
-    if (object === value) {
+    if (object === value || Number.isNaN(object) && Number.isNaN(value)) {
         return true;
     }
 
@@ -23,7 +23,3 @@ const contains = function (object, value) {
 };
 
 export { contains };
-
-// Take in object and value paramater
-
-// data
