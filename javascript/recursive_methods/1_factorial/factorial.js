@@ -40,6 +40,8 @@ const factorial = function (n) {
 
 export { factorial };
 
+console.log(factorial(4));
+
 // PSUEDOCODE
 // factorial(4)
 // return 4 * factorial(3)
