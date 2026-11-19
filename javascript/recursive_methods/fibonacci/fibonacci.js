@@ -17,6 +17,6 @@ function fibs(num) {
     }
 }
 
-console.log(fibs(8));
+console.log(fibs(2));
 
 export { fibs };
